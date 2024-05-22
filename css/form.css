@@ -794,6 +794,7 @@ ul {
 
 .zf-large .zf-tempContDiv .zf-form-sBox {
 	width: 100%;
+	outline: none;
 }
 
 
