@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hookah-Shisha&#x20;Support&#x20;Form</title>
     <link href="css/form.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,100..900;1,100..900">
     <script src="js/validation.js"></script>
 </head>
 
@@ -245,6 +246,26 @@
             }, 5000);
         });
     </script>
+        <script>
+            document.getElementById('zf-submitColor').addEventListener('click', function(event) {
+        var inputs = document.querySelectorAll('input, select, textarea');
+        var isValid = true;
+    
+        inputs.forEach(function(input) {
+            if (!input.value.trim()) {
+                input.classList.add('error');
+                isValid = false;
+            } else {
+                input.classList.remove('error');
+            }
+        });
+    
+        if (!isValid) {
+            event.preventDefault();
+        }
+    });
+    
+        </script>
 </body>
 
 </html>
